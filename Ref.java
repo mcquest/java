@@ -12,9 +12,10 @@ public class Ref
 		System.out.print(arrayMax(i));
 	}
 	
-	
-	
-	
+	// Matrix example
+	char[][] m = {{'-','x','o'},
+		      {'o','x','-'},
+		      {'o','x','-'}};
 	
 	// Maximum integer from an array 
 	// and change comparison for Min
