@@ -12,6 +12,12 @@ public class Ref
 		//System.out.println(arrayMax(ia));
 		boolean b = false;
 		System.out.println(SecondLargest(ia));
+		
+		/*
+		 * How Scanners function in Loops
+		 */
+		Scanner scan = new Scanner(System.in);
+		
 	}
 	
 	// Matrix example
