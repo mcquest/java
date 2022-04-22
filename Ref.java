@@ -6,10 +6,12 @@ public class Ref
 		// Accessing a function with Dot notation 
 		mVariabkesCanBEANyName.HelloWorld();
 		
+		java.util.concurrent.TimeUnit.SECONDS.sleep(1);
 		
-		
-		int[] i = {5,2,6,7,4,9,0};
-		System.out.print(arrayMax(i));
+		int[] ia = {5,2,6,7,4,9,0};
+		//System.out.println(arrayMax(ia));
+		boolean b = false;
+		System.out.println(SecondLargest(ia));
 	}
 	
 	// Matrix example
@@ -36,5 +38,54 @@ public class Ref
 		// Return Max
 		return(tempMax);
 				
+	}
+	// second largest int in an array 
+	
+	static int SecondLargest(int[] a )
+	{
+		
+		if (a.length == 0 | a.length == 1)
+		{
+			return -0;
+		}
+		
+		
+		else
+		{
+			int l2; 
+			int l1;
+			
+			if (a[0] > a[1])
+			{
+				l2 = a[1];
+				l1 = a[0];
+				
+			}
+			else
+			{
+				l2 = a[0];
+				l1 = a[1];
+			}
+			
+			for (int i: a)
+			{
+				//System.out.println(i);
+				if (i > l1)
+				{
+					l2 = l1;
+					l1 = i;
+					
+				}
+				else if(i > l2)
+				{
+					l2 = a[i];
+				}
+			}
+			
+			return l2;
+		}
+		
+		
+		
 	}
 }
