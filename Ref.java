@@ -2,7 +2,11 @@ public class Ref
 {
 	public static void main(String[] args)
 	{
-		Manager mVariabkesCanBEANyName = new Manager();
+		//Holds App
+        	//Scanner scanObj = new Scanner(System.in);
+        	//String name = scanObj.next();
+
+        	Manager mVariabkesCanBEANyName = new Manager();
 		// Accessing a function with Dot notation 
 		mVariabkesCanBEANyName.HelloWorld();
 		
@@ -10,13 +14,19 @@ public class Ref
 		
 		int[] ia = {5,2,6,7,4,9,0};
 		//System.out.println(arrayMax(ia));
-		boolean b = false;
+		boolean b1 = false;
 		System.out.println(SecondLargest(ia));
+		mergeSort(testA, testA.length);
+		for (int n: testA)
+		{
+			System.out.print(n);
+		}
 		
 		/*
 		 * How Scanners function in Loops
 		 */
 		Scanner scan = new Scanner(System.in);
+		scan.close();
 		
 	}
 	
