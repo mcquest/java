@@ -1,4 +1,5 @@
-/* TextAdventure.java
+/* 
+ * TextAdventure.java
  * Mister Charles
  * Teach the user a bit about 
  * Language Learning & Computer Science
