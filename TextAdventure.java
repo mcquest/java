@@ -1,6 +1,6 @@
 /* 
  * TextAdventure.java
- * Mister Charles
+ * MCQuest
  * Teach the user a bit about 
  * Language Learning & Computer Science
  */ 
