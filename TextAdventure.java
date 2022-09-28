@@ -71,7 +71,7 @@ public class TextAdventure
 			// TODO Auto-generated catch block
 			//e.printStackTrace();
 		//}
-	    System.out.println("To be continued");
+	    System.out.println("To be continued...");
 	      
 	    /* 
 	    // If statement to check string input
