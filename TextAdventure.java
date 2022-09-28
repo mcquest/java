@@ -13,62 +13,55 @@ import java.util.concurrent.TimeUnit;
 // Classes "ARE" and Functions "DO"
 public class TextAdventure
 {
-	public static void main(String[] args) throws InterruptedException
+	// Create a Scanner object
+	static Scanner scanningObject = new Scanner(System.in);
+
+	public static void main(String[] args) 
 	{
 		
-		// Function call
 		Choice1();    
 	}
 	
 	// Ask for user input from text and return the answer
 	public static String UserInput (String text)
 	{
-		// Create a Scanner object
-		Scanner scanningObject = new Scanner(System.in);
 		// Prints the input phrase
 		System.out.print("Enter a " + text + ": "); 
 		// Read user input and sets it to output
 		String output = scanningObject.nextLine();
-		scanningObject.close();
+		//scanningObject.close();
 		return output; 
 	}
 	
 	// Function to prompt left or right input choice from user
 	public static String LorR (String text)
 	{
-		
+		return text;
 	}
 	
 	
 	
 	// Mr Charles' Text Adventure Introduction
 	// You begin on the street and have two choices
-	public static void Choice1() throws InterruptedException
+	public static void Choice1() 
 	{
 		// Create a Scanner object
-		Scanner scanning = new Scanner(System.in); 
+	    //Scanner scanning = new Scanner(System.in); 
 	    
-		// Print a string to the console and go to the next line 
-		System.out.println("Yes or No");
+	    // Print a string to the console and go to the next line 
+	    System.out.println("Yes or No");
 	    
-		String yorn = scanning.next();
+	    String yesorno = scanningObject.nextLine();
 	    
-		System.out.println(true);   
+	    System.out.println(yesorno);   
 	    
-		String name = user_input("name"); // Inputs "name" to user_input
-		String time = user_input("certain time"); // Inputs "certain time" to user_input
-		String minutes = user_input("number"); // Inputs "number" to user_input
-		String food = user_input("type of food"); // Inputs "type of food" to user_input
-		
-		// Prints the first phrase with name and time in it
-		System.out.println("Hello, my name is " + name + ". I wake up at " + time + " am and brush my teeth");
-		// Prints the second phrase with minutes and food in it
-		System.out.println("for " + minutes + " minutes. I then eat " + food + " and leave for school.");
+	    // Print a string to the console and go to the next line 
+	    System.out.println("Who are you?");
 	    
-		// Read user input
-		String userName = scanning.nextLine();
+	    // Read user input
+	    String userName = scanningObject.nextLine();
 	    
-	    	// Time Delay 
+	    // Time Delay 
 		//try 
 		//{
 		//TimeUnit.SECONDS.sleep(5);
@@ -78,26 +71,43 @@ public class TextAdventure
 			// TODO Auto-generated catch block
 			//e.printStackTrace();
 		//}
-	    
-	    // Output user input
-	    System.out.println("Username is: " + userName);  
-	    
+	    System.out.println("To be continued");
+	      
+	    /* 
 	    // If statement to check string input
-	    if (userName.equals("MathWizard") | userName.equals("Naruto"))
+	    if (userName.equals("MathWizard") || userName.equals("Naruto"))
 	    {
+			// Output user input
+			System.out.println("Username is: " + userName);
 	    	System.out.println("You have unlocked the secret tower.");
 	    }
+		 
 	    else
 	    {
+			// Output user input
+			System.out.println("Username is: " + userName);
 	    	System.out.println("Left or Right?");
 	    	String direction = scanning.nextLine();
 	    	System.out.println("You have chosen: " + direction);
 	    }
-	    System.out.println("true or false?");
+		*/
+	    //System.out.println("true or false?");
 	    
-	    Boolean yesorno = scanning.nextBoolean();
+	    //Boolean b1 = scanning.nextBoolean();
 	    
-	    System.out.println(yesorno);
+	    //System.out.println(b1);
+
+		String name = UserInput("name");
+		String time = UserInput("time"); 
+		String minutes = UserInput("number"); 
+		String food = UserInput("type of food"); 
+		
+		// Prints the first phrase with name and time in it
+		System.out.println("Hello, my name is " + name + ". I wake up at " + time + " am and brush my teeth");
+		// Prints the second phrase with minutes and food in it
+		System.out.println("for " + minutes + " minutes. I then eat " + food + " and leave for school.");
+		
+		// Function call
 	}
 	
 	static void StreetChoice1 ()
