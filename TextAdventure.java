@@ -15,15 +15,6 @@ public class TextAdventure
 {
 	public static void main(String[] args) throws InterruptedException
 	{
-		String name = user_input("name"); // Inputs "name" to user_input
-		String time = user_input("certain time"); // Inputs "certain time" to user_input
-		String minutes = user_input("number"); // Inputs "number" to user_input
-		String food = user_input("type of food"); // Inputs "type of food" to user_input
-		
-		// Prints the first phrase with name and time in it
-		System.out.println("Hello, my name is " + name + ". I wake up at " + time + " am and brush my teeth");
-		// Prints the second phrase with minutes and food in it
-		System.out.println("for " + minutes + " minutes. I then eat " + food + " and leave for school.");
 		
 		// Function call
 		Choice1();    
@@ -55,25 +46,32 @@ public class TextAdventure
 	public static void Choice1() throws InterruptedException
 	{
 		// Create a Scanner object
-	    Scanner scanning = new Scanner(System.in); 
+		Scanner scanning = new Scanner(System.in); 
 	    
-	    // Print a string to the console and go to the next line 
-	    System.out.println("Yes or No");
+		// Print a string to the console and go to the next line 
+		System.out.println("Yes or No");
 	    
-	    String yorn = scanning.next();
+		String yorn = scanning.next();
 	    
-	    System.out.println(true);   
+		System.out.println(true);   
 	    
-	    // Print a string to the console and go to the next line 
-	    System.out.println("Who are you?");
+		String name = user_input("name"); // Inputs "name" to user_input
+		String time = user_input("certain time"); // Inputs "certain time" to user_input
+		String minutes = user_input("number"); // Inputs "number" to user_input
+		String food = user_input("type of food"); // Inputs "type of food" to user_input
+		
+		// Prints the first phrase with name and time in it
+		System.out.println("Hello, my name is " + name + ". I wake up at " + time + " am and brush my teeth");
+		// Prints the second phrase with minutes and food in it
+		System.out.println("for " + minutes + " minutes. I then eat " + food + " and leave for school.");
 	    
-	    // Read user input
-	    String userName = scanning.nextLine();
+		// Read user input
+		String userName = scanning.nextLine();
 	    
-	    // Time Delay 
+	    	// Time Delay 
 		//try 
 		//{
-		TimeUnit.SECONDS.sleep(5);
+		//TimeUnit.SECONDS.sleep(5);
 		//} 
 		//catch (InterruptedException e) 
 		//{
