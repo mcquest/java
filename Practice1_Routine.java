@@ -11,10 +11,9 @@ public class Practice1_Routine
 		// Create a Scanner object
 		Scanner myObj = new Scanner(System.in);
 		// Prints the input phrase
-	    System.out.print("Enter " + var1 + ": "); 
-	    // Read user input and sets it to output
-	    String output = myObj.nextLine();
-	    // outputs output
+		System.out.print("Enter " + var1 + ": "); 
+	  	// Read user input and sets it to output
+	  	String output = myObj.nextLine();
 		return output; 
 	}
 	
