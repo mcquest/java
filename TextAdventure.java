@@ -26,27 +26,33 @@ public class TextAdventure
 		System.out.println("for " + minutes + " minutes. I then eat " + food + " and leave for school.");
 		
 		// Function call
-		StreetChoice1();    
+		Choice1();    
 	}
 	
 	// Ask for user input from text and return the answer
 	public static String UserInput (String text)
 	{
 		// Create a Scanner object
-		Scanner myObj = new Scanner(System.in);
+		Scanner scanningObject = new Scanner(System.in);
 		// Prints the input phrase
 		System.out.print("Enter a " + text + ": "); 
 		// Read user input and sets it to output
-		String output = myObj.nextLine();
-		// outputs output
+		String output = scanningObject.nextLine();
+		scanningObject.close();
 		return output; 
+	}
+	
+	// Function to prompt left or right input choice from user
+	public static String LorR (String text)
+	{
+		
 	}
 	
 	
 	
 	// Mr Charles' Text Adventure Introduction
 	// You begin on the street and have two choices
-	public static void StreetChoice1() throws InterruptedException
+	public static void Choice1() throws InterruptedException
 	{
 		// Create a Scanner object
 	    Scanner scanning = new Scanner(System.in); 
@@ -96,7 +102,7 @@ public class TextAdventure
 	    System.out.println(yesorno);
 	}
 	
-	static void StreetChoice2 ()
+	static void StreetChoice1 ()
 	{
 		
 	}
