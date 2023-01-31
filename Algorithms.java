@@ -84,39 +84,43 @@ public class Algorithms
 	}
 
 
-	public static void insertionSortImperativeA(int[] input) 
+	public static int[] insertionSortImperativeA(int[] inputA) 
 	{
-		for (int i = 1; i < input.length; i++) 
+		for (int i = 1; i < inputA.length; i++) 
 		{ 
-			int key = input[i]; 
+			int key = inputA[i]; 
 			int j = i - 1;
-			while (j >= 0 && input[j] > key) 
+			while (j >= 0 && inputA[j] > key) 
 			{
-				input[j + 1] = input[j];
+				inputA[j + 1] = inputA[j];
 				j = j - 1;
 			}
-			input[j + 1] = key; 
+			inputA[j + 1] = key; 
 		}
+		return inputA;
 	}
 
 	// First Recursive Call With i as length
-	private static void insertionSortRecursiveA(int[] input, int i)
+	private static int[] insertionSortRecursiveA(int[] inputA, int i)
 	{
-		if (i <= 1) {
+		if (i <= 1) 
+		{
 			return;
 		}
-		insertionSortRecursiveA(input, i - 1);
-		int key = input[i - 1];
+		insertionSortRecursiveA(inputA, i - 1);
+		int key = inputA[i - 1];
 		int j = i - 2;
-		while (j >= 0 && input[j] > key) {
-			input[j + 1] = input[j];
+		while (j >= 0 && inputA[j] > key) 
+		{
+			inputA[j + 1] = inputA[j];
 			j = j - 1;
 		}
-		input[j + 1] = key;
+		inputA[j + 1] = key;
+		return inputA;
 	}
 
 
-	public static void selectionSortAscending(int[] arr) 
+	public static int[] selectionSortAscending(int[] arr) 
 	{
 		for (int i = 0; i < arr.length - 1; i++) 
 		{
@@ -136,21 +140,26 @@ public class Algorithms
 				arr[minElementIndex] = temp;
 			}
 		}
+		return arr;
 	}
 
 
-	public static void mergeSort(int[] a, int n) {
-		if (n < 2) {
+	public static void mergeSort(int[] a, int n) 
+	{
+		if (n < 2) 
+		{
 			return;
 		}
 		int mid = n / 2;
 		int[] l = new int[mid];
 		int[] r = new int[n - mid];
 	
-		for (int i = 0; i < mid; i++) {
+		for (int i = 0; i < mid; i++) 
+		{
 			l[i] = a[i];
 		}
-		for (int i = mid; i < n; i++) {
+		for (int i = mid; i < n; i++) 
+		{
 			r[i - mid] = a[i];
 		}
 		mergeSort(l, mid);
@@ -163,26 +172,26 @@ public class Algorithms
 	public static void merge(int[] a, int[] l, int[] r, int left, int right) 
 	{
  
-    	int i = 0, j = 0, k = 0;
-    	while (i < left && j < right) 
+    		int i = 0, j = 0, k = 0;
+    		while (i < left && j < right) 
 		{
-        	if (l[i] <= r[j]) 
+        		if (l[i] <= r[j]) 
 			{
-            	a[k++] = l[i++];
-        	}
-        	else 
+            			a[k++] = l[i++];
+        		}
+        		else 
 			{
-            	a[k++] = r[j++];
-        	}
-    	}
-    	while (i < left) 
+            			a[k++] = r[j++];
+        		}
+    		}
+    		while (i < left) 
 		{
-        	a[k++] = l[i++];
-    	}
-    	while (j < right) 
+        		a[k++] = l[i++];
+    		}
+    		while (j < right) 
 		{
-        	a[k++] = r[j++];
-    	}
+        		a[k++] = r[j++];
+    		}
 	}
 
 
