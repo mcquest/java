@@ -82,7 +82,21 @@ public class Algorithms
 			return l2;
 		}	
 	}
-
+	
+	public static int[] ShiftRight(int[] arrayE)
+   	{
+        int l = arrayE.length;
+        int last = arrayE[l-1];
+        for (int i = 1; i <= l-1; i++)
+        {
+            for (int j = 0; j <= l-2; i++)
+            {
+                arrayE[i] = arrayE[j];
+            }
+        }
+        arrayE[0] = last;
+        return arrayE;
+    	}
 
 	public static int[] insertionSortImperativeA(int[] inputA) 
 	{
