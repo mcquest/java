@@ -117,12 +117,17 @@ public class Algorithms
 	// First Recursive Call With i as length
 	private static int[] insertionSortRecursiveA(int[] inputA, int i)
 	{
+		// Check for an empty list
 		if (i <= 1) 
 		{
-			return;
+			// matching the method return value
+			return inputA;
 		}
+		// recursive call
 		insertionSortRecursiveA(inputA, i - 1);
+		// store the last element of the list 
 		int key = inputA[i - 1];
+		// second to last element index
 		int j = i - 2;
 		while (j >= 0 && inputA[j] > key) 
 		{
