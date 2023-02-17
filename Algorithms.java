@@ -100,8 +100,10 @@ public class Algorithms
 
 	public static int[] insertionSortImperativeA(int[] inputA) 
 	{
+		// for loop from second element to length
 		for (int i = 1; i < inputA.length; i++) 
 		{ 
+			//
 			int key = inputA[i]; 
 			int j = i - 1;
 			while (j >= 0 && inputA[j] > key) 
