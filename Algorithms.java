@@ -19,12 +19,13 @@ public class Algorithms
     }
 	
 	
-    public static void sR(int n)
+    public static void recurFun2(int n)
     {
         System.out.println(n);
         if(n>2)
         {
-            sR(n-1);
+	
+            recurFun2(n-1);
             System.out.print(n);
         }
 
