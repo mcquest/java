@@ -17,6 +17,19 @@ public class Algorithms
         }
         return false;
     }
+	
+	
+    public static void sR(int n)
+    {
+        System.out.println(n);
+        if(n>2)
+        {
+            sR(n-1);
+            System.out.print(n);
+        }
+
+    }
+	
     // Maximum integer from an array 
 	// and change comparison for Min
 	static int arrayMax(int[] arrayI)
