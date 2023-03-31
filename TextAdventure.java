@@ -13,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 // Classes "ARE" and Functions "DO"
 public class TextAdventure
 {
+	int h = 100;
 	// Create a Scanner object
 	static Scanner scanningObject = new Scanner(System.in);
 
@@ -49,7 +50,7 @@ public class TextAdventure
 	    //Scanner scanning = new Scanner(System.in); 
 	    
 	    // Print a string to the console and go to the next line 
-	    System.out.println("Yes or No");
+	    System.out.println("Do you want to play? Type: Yes or No");
 	    
 	    String yesorno = scanningObject.nextLine();
 	    
@@ -96,16 +97,14 @@ public class TextAdventure
 	    //Boolean b1 = scanning.nextBoolean();
 	    
 	    //System.out.println(b1);
-
-		String name = UserInput("name");
 		String time = UserInput("time"); 
 		String minutes = UserInput("number"); 
 		String food = UserInput("type of food"); 
 		
 		// Prints the first phrase with name and time in it
-		System.out.println("Hello, my name is " + name + ". I wake up at " + time + " am and brush my teeth");
+		System.out.println("Hello, " + userName + ". Wake up. " + time + " Wake up!");
 		// Prints the second phrase with minutes and food in it
-		System.out.println("for " + minutes + " minutes. I then eat " + food + " and leave for school.");
+		System.out.println( minutes + " Wake up!!!"  + " ... you open your eyes.");
 		
 		// Function call
 	}
