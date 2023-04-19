@@ -50,49 +50,34 @@ public class Algorithms
 		return(max);
 				
 	}
-	// second largest int in an array 
 	
-	static int SecondLargest(int[] a )
+	// second largest int in an array 
+	static int f5(int[] a )
 	{
-		
 		if (a.length == 0 | a.length == 1)
-		{
-			return -0;
-		}
-		
-		
+		{ return -0; }
 		else
 		{
-			int l2; 
-			int l1;
-			
+			int l2; int l1;
 			if (a[0] > a[1])
 			{
-				l2 = a[1];
-				l1 = a[0];
-				
+				l2 = a[1]; l1 = a[0];
 			}
 			else
 			{
-				l2 = a[0];
-				l1 = a[1];
+				l2 = a[0]; l1 = a[1];
 			}
-			
 			for (int n: a)
-			{
-				//System.out.println(i);
+			{ 
 				if (n > l1)
 				{
-					l2 = l1;
-					l1 = n;
-					
+					l2 = l1; l1 = n;
 				}
 				else if(n > l2)
 				{
 					l2 = n;
 				}
 			}
-			
 			return l2;
 		}	
 	}
