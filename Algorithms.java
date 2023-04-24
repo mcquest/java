@@ -139,17 +139,17 @@ public class Algorithms
     	}
 
 
-	// Sort from smallest to largest
+	// Method to reurn integer array sorted from smallest to largest
 	public static int[] insertionSortImperativeA(int[] inputA) 
 	{
 		// for loop from second element to 1 less than length
 		for (int i = 1; i < inputA.length; i++) 
 		{ 
-			// store the second element in the array
+			// store the second-end element in the array
 			int key = inputA[i]; 
 			// variable to store trailing elements indeces
 			int j = i - 1;
-			//while loop to check leading and trailing elements for size 
+			//while loop to check leading and trailing elements for value
 			while (j >= 0 && inputA[j] > key) 
 			{
 				//array index accessing to move up large element
